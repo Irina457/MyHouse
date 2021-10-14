@@ -1,63 +1,41 @@
 package org.example.entity;
 
 public class House {
-    private String owner;
     private int numFloor;
     private final String address;
     private String color;
 
-    private Owner ownerName;
-    private Owner ownerSurname;
-    private Owner ownerAge;
+    private Owner owner;
 
-    public House(String owner, int numFloor, String color){
+    public House(int numFloor, String color, Owner owner){
 
-        this.owner = owner;
         this.numFloor = numFloor;
         this.address = "Pushkinskaya, 243";
         this.color = color;
-
-        this.ownerName = new Owner();
-        ownerName.setName("Masha");
-
-        this.ownerSurname = new Owner();
-        ownerSurname.setSurname("Petrova");
-
-        this.ownerAge = new Owner();
-    }
-
-    public String getOwner(){
-        return owner;
+        this.owner = owner;
     }
 
     public int getNumFloor(){
-
         return numFloor;
     }
 
     public String getAddress(){
-
         return address;
     }
 
     public String getColor(){
-
         return color;
     }
 
     public String getName(){
-        return ownerName.getName();
+        return owner.getName();
     }
 
     public String getSurname(){
-        return ownerSurname.getSurname();
+        return owner.getSurname();
     }
 
     public final int getAge(){
-        return ownerAge.getAge();
+        return owner.getAge();
     }
-
-
-
-
 }

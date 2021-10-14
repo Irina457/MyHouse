@@ -14,12 +14,12 @@ import org.example.entity.Owner;
 */
 public class Application {
     public static void main(String[] args){
-        House house = new House("Neighbor", 9, "white");
+        Owner owner = new Owner("Masha", "Petrova");
+        House house = new House(9, "white", owner);
 
         System.out.println("House and its owner: ");
         System.out.println("House:");
 
-        System.out.println("Owner: " + house.getOwner());
         System.out.println("Number of floors: " + house.getNumFloor());
         System.out.println("Address: " + house.getAddress());
         System.out.println("Color of house: " + house.getColor());
@@ -27,13 +27,8 @@ public class Application {
         System.out.println();
         System.out.println("Owner:");
 
-        String name = house.getName();
         System.out.println("Name of the Owner: " + house.getName());
-
-        String surname = house.getSurname();
         System.out.println("Surname of the Owner: " + house.getSurname());
-
-        int age = house.getAge();
         System.out.println("Age of the Owner: " + house.getAge());
     }
 }
