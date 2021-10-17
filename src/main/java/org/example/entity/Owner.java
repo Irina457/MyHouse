@@ -1,14 +1,14 @@
 package org.example.entity;
 
 public class Owner {
-    private String name;
+    private final String name;
     private String surname;
-    private final int age;
+    private int age;
 
-    public Owner(String name, String surname){
+    public Owner(String name, String surname, int age){
         this.name = name;
         this.surname = surname;
-        this.age = 20;
+        this.age = age ;
     }
 
     public String getName(){

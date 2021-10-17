@@ -7,12 +7,14 @@ public class House {
 
     private Owner owner;
 
-    public House(int numFloor, String color, Owner owner){
+    public House(int numFloor, String address, String color, Owner owner){
             this.numFloor = numFloor;
-            this.address = "Pushkinskaya, 243";
+            this.address = address;
             this.color = color;
             this.owner = owner;
         }
+
+//    @Getter public int numFloor;
 
         public int getNumFloor(){
             return numFloor;

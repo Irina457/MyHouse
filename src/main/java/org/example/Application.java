@@ -1,8 +1,4 @@
 package org.example;
-
-import org.example.entity.House;
-import org.example.entity.Owner;
-
 /*
 Создать 3 класса - Application, House, Owner
 В каждом классе должны быть и изменяемые, и неизменяемые поля, все поля - приватные
@@ -12,10 +8,13 @@ import org.example.entity.Owner;
 Владелец может представиться (рассказать о себе)
 Необходимо в методе main создать дом и вывести на печать информацию о его владельце
 */
+import org.example.entity.House;
+import org.example.entity.Owner;
+
 public class Application {
     public static void main(String[] args){
-        Owner owner = new Owner("Masha", "Petrova");
-        House house = new House(9, "white", owner);
+        Owner owner = new Owner("Masha","Petrova", 20);
+        House house = new House(9, "Pushkinskaya, 243", "white", owner);
 
         System.out.println("House and its owner: ");
         System.out.println("House:");
